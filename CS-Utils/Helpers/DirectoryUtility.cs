@@ -75,7 +75,6 @@ public static class DirectoryUtility
         return Path.GetDirectoryName(filePath);
     }
 
-    // ReSharper disable once MemberCanBePrivate.Global
     public static string? GetParentDirectoryPath(string folderPath, int levels)
     {
         var result = folderPath;
@@ -92,7 +91,6 @@ public static class DirectoryUtility
         return GetParentDirectoryPath(folderPath, 1);
     }
 
-    // ReSharper disable once MemberCanBePrivate.Global
     public static string GetTempDirectory()
     {
         return Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
